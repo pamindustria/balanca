@@ -29,19 +29,22 @@ class _TelaPrincipalPageState extends State<TelaPrincipalPage> {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              const Text(
-                'BALANÇA - EPS',
-                style: TextStyle(fontSize: 40.0),
-              ),
-              Text(
-                '${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}',
-                style: const TextStyle(fontSize: 40.0),
-              ),
-            ],
+          title: const Text(
+            'BALANÇA - EPS',
+            style: TextStyle(fontSize: 40.0),
           ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 18.0),
+              child: Center(
+                child: Text(
+                  '${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}',
+                  style: const TextStyle(fontSize: 40.0),
+                ),
+              ),
+            ),
+          ],
+          centerTitle: true,
           toolbarHeight: 70,
         ),
         body: Padding(
