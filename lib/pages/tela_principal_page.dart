@@ -215,7 +215,7 @@ class _TelaPrincipalPageState extends State<TelaPrincipalPage> {
                         primary: Colors.green,
                         padding: const EdgeInsets.symmetric(vertical: 15.0),
                         elevation: 5,
-                        minimumSize: const Size(255.0, 0),
+                        minimumSize: const Size(235.0, 0),
                       ),
                     ),
                   )
